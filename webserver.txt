@@ -1,0 +1,6 @@
+<?php
+$Temp=$_POST["temperature"];
+$Hum=$_POST["humidity"];
+$Write="<p>Temperature : " . $Temp . " Celcius </p>". "<p>Humidity : " . $Hum . " % </p>";
+file_put_contents('sensor.html',$Write); 
+?>

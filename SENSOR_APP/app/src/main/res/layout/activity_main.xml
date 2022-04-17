@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff787878"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/warm"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textColor="#FFF"
+        android:id="@+id/temp"
+        android:layout_alignBottom="@+id/celcius"
+        android:layout_marginLeft="75dp"/>
+    <TextView
+        android:id="@+id/celcius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginBottom="-100dp"
+        android:text="°C"
+        android:textColor="#FFF"
+        android:textSize="30sp" />
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="185dp"
+        android:src="@drawable/droplet"/>
+    <TextView
+        android:text=" %"
+        android:textSize="30sp"
+        android:textColor="#FFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="-190dp"
+        android:layout_marginLeft="120dp"
+        android:id="@+id/percent"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hum"
+        android:textSize="30sp"
+        android:textColor="#FFF"
+        android:layout_marginLeft="80dp"
+        android:layout_alignBottom="@+id/percent"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="300dp"
+        android:text="STOP"
+        android:id="@+id/btnstop"/>
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="324dp"
+        android:layout_height="233dp"
+        android:layout_alignTop="@+id/celcius"
+        android:layout_alignBottom="@+id/btnstop"
+        android:layout_marginStart="-64dp"
+        android:layout_marginTop="295dp"
+        android:layout_marginBottom="-280dp"
+        android:layout_toEndOf="@+id/btnstop"
+        android:src="@drawable/ic_launcher_background" />
+</RelativeLayout>
